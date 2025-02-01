@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css"> 
+    <script src="landing.js"></script>
 </head>
 <body>
     <div class="container">
-        
+        <!--NAVBAR-->
         <nav class="navigation">
             <div class="header-logo">
                 <img src="\\wsl.localhost\Ubuntu\home\dunwall\Odin\Odin-Landing-Page\LP-links-images\poke.jpg" alt="logo" >
             </div>
+
             <div class="header-link">
                 <a href="#">HOME</a>
                 <a href="#ABOUT">ABOUT</a>
                 <a href="#CONTACT">CONTACT</a>
             </div>
         </nav>
-        
+
+        <!--HERO SECTION-->
         <div class="hero">
-            <h1>The First Pokemon Games</h1>
-            <p>The first pokemon games made were red and blue in 1996, kickstarting a world renowned and deeply beloved franchise
-            </p>
-            <button type="button">Sign Up</button>
+            <div class="hero-a">
+                <h1>Red And Blue Fanpage</h1>
+                <p>The first pokemon games made were red and blue in 1996, kickstarting a world renowned and deeply beloved franchise
+                </p>
+                <button type="button">Sign Up</button>
+            </div>
+    
             <div class="hero-image">
                 <img src="\\wsl.localhost\Ubuntu\home\dunwall\Odin\Odin-Landing-Page\LP-links-images\redblue.jpg" alt="pokemon red and blue">
             </div>
         </div>
         
-        <div class="content">
-            <h1>Some random information</h1>
+        <!--CONTENT SECTION-->
+        <div class="content" id="ABOUT">
+            <h1>The Most Memorable Pokemon From Gen 1</h1>
             <div>
                 <img src="\\wsl.localhost\Ubuntu\home\dunwall\Odin\Odin-Landing-Page\LP-links-images\zapdos.jpg" alt="Zapdos">
                 <p>Gen 1 legendary you find at your local power station</p>
@@ -44,17 +52,37 @@
                 <p>this pokemon's movepool was so vast you could sweep the entire game with only nidoking</p>
             </div>
         </div>
+
+        <!--QUOTE SECTION-->
         <div class="quote">
             <p style="font-style: italic;">It is not by rejecting different ideas, but by accepting different ideas that the world creates a chemical reaction. 
                 This is truly the formula for changing the world.
             </p>
             <b>-Natural Harmonia Gropius</b>
         </div>
+
+        <!--FOOTER-->
         <div class="footer">
             <h2>Call to action! It's time!</h2>
             <b>download a romhack from the button there</b>
             <div class="signup">
-                <button type="button">Sign Up</button>
+                <button type="button" id="rom">Romhack</button>
+                <script>
+                    document.getElementById("rom").addEventListener("click",function(){
+                        window.open("https://www.pokecommunity.com/forums/rom-hacks-showcase.184/","_blank")
+                    })
+                </script>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div class="contact" id="CONTACT">
+            <h3>By Jordan</h3>
+            <div class="contact-info">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jordan-hynniewta-675341336/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/Dunwall" target="_blank">Github</a></li>
+                </ul>
             </div>
         </div>
     </div>

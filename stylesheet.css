@@ -54,9 +54,7 @@ body{
 .hero-a{
     flex-basis: 400px;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
-    justify-content: flex-start;
     text-align: left;
 
 }
@@ -64,7 +62,7 @@ body{
     font-family: 'Roboto', arial;
     opacity: 0.9;
 }
-h1{
+.hero h1{
     font-size: 50px;
     font-weight: bold;
     color: aliceblue;
@@ -92,43 +90,109 @@ h1{
     min-width: 300px;
 }
 .hero-image img{
-
     flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
+/*CONTENT SECTION*/
+.content{
+    align-items: center;
+    color: aliceblue;
+    background-color: salmon;
+}
 
+.pokeimg{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pokeimg div{
+    display: flex;
+    flex-direction: column; /* Stack image & text */
+    align-items: center; /* Center content */
+    text-align: center;
+}
+.pokeimg div img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+    margin: 5px 20px 0px 20px;;
+}
+.content h1{
+    text-shadow: 2px 2px firebrick;
+}
+/* QUOTE SECTION*/
+.quote{
+    display:flex;
+    flex-direction: column;
+    background-color: gray;
+}
+/*FOOTER SECTION*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(250, 106, 10);
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.text{
+    margin: 5px;
+    padding: 5px;
+}
+.signup{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: right;
+}
+.signup button{
+    font-size: large;
+    font-family: fantasy;
+    background-color: rgb(9, 173, 214);
+    color: whitesmoke;
+    text-shadow:1px 1px black;
+    border-radius: 5px;
+}
 /*CONTACT SECTION*/
 .contact{
     /*background-color: rgb(20, 20, 141);*/
     justify-content: space-around;
-    color: rgb(0, 0, 0);
+    color: rgb(99, 22, 187);
     display: flex;
     box-sizing: border-box;
-    padding: 10px;
-    box-shadow: 0px 1px #232946;
     font-weight: bolder;
+    background-color: gold;
 }
 .contact h3{
     font-family: fantasy;
-    display: flex;
-    flex-wrap: wrap;
-    width: max-content;
+    padding: 0;
+    font-size: 20px;
+    box-shadow: 4px 4px blue;
+    text-shadow: 2px 2px black;
 }
 .contact-info{
     font-size: large;
     font-family: fantasy;
     flex-wrap: wrap;
-    justify-content: end;
 }
 .contact-info ul{
+    display: flex;
+    gap: 10px;
     list-style: none;
     margin-right: 50px;
-    text-align: end;
+    text-align: right;
     font-weight: 100;
 }
 
 .contact-info ul a{
     text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    box-shadow: 4px 4px blue;
 }

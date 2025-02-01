@@ -167,7 +167,7 @@ button{
 .contact{
     /*background-color: rgb(20, 20, 141);*/
     justify-content: space-around;
-    color: rgb(99, 22, 187);
+    color: firebrick;
     display: flex;
     box-sizing: border-box;
     font-weight: bolder;
@@ -197,6 +197,7 @@ button{
 .contact-info ul a{
     text-decoration: none;
     font-weight: bolder;
+    color: firebrick;
     font-size: 20px;
     text-shadow: 1px 1px rgb(0, 0, 0);
     box-shadow: 4px 4px gold;

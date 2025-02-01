@@ -21,8 +21,8 @@ body{
 
 .header-logo img{
     opacity: 0.9;
-    width: 84px;
-    height: 84px;
+    width: 20%;
+    height: 20%;
     margin-right: auto
 }
 
@@ -48,24 +48,31 @@ body{
     align-items: center;
     justify-content:center;
     padding: 90px;
+    flex-wrap: wrap;
 }
 .hero-a{
     flex-basis: 400px;
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-right: 10%;
+    
 }
 .hero-a p {
-    color: blanchedalmond;
-    font-family: 'Roboto', arial;
+    font-style: oblique;
+    color: rgb(231, 139, 0);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     opacity: 0.9;
 }
 .hero h1{
+    text-shadow:2px 2px purple;
+    box-shadow: 5px 5px black;
+
     font-size: 50px;
     font-weight: bold;
-    color: aliceblue;
+    color: rgb(255, 3, 3);
     margin: 0;
-    font-family: 'Roboto',arial;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .hero button{
